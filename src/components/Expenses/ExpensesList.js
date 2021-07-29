@@ -5,9 +5,6 @@ import './ExpensesList.css';
 
 const ExpensesList = ({items}) => {
   console.log('items ', items)
-  let expensesContent = <p>No Expense Found</p>;
-
-  console.log(items.length)
 
   if(items.length === 0) {
     return <h2 className="expenses-list__fallback">Found no expenss!</h2>
